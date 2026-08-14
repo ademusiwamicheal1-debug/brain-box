@@ -1,0 +1,42 @@
+{
+  "entities": {
+    "users": {
+      "title": "User Profiles",
+      "description": "User account and statistical records",
+      "properties": {
+        "uid": { "type": "string" },
+        "username": { "type": "string" },
+        "email": { "type": "string" },
+        "avatar": { "type": "string" },
+        "totalQuizzesPlayed": { "type": "number" },
+        "totalQuestionsAnswered": { "type": "number" },
+        "totalCorrectAnswers": { "type": "number" },
+        "totalScore": { "type": "number" },
+        "currentStreak": { "type": "number" },
+        "bestStreak": { "type": "number" },
+        "totalTimeSpentSeconds": { "type": "number" },
+        "categoryStats": { "type": "object" },
+        "quizHistory": { "type": "array" },
+        "unlockedBadgeIds": { "type": "array" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["uid", "username"]
+    },
+    "leaderboard": {
+      "title": "Leaderboard Scores",
+      "description": "Global leaderboard entries submitted by players",
+      "properties": {
+        "uid": { "type": "string" },
+        "username": { "type": "string" },
+        "avatar": { "type": "string" },
+        "score": { "type": "number" },
+        "accuracy": { "type": "number" },
+        "timeSpentSeconds": { "type": "number" },
+        "category": { "type": "string" },
+        "difficulty": { "type": "string" },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["username", "score"]
+    }
+  }
+}

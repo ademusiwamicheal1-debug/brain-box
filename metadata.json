@@ -1,0 +1,6 @@
+{
+  "name": "Interactive Quiz Arena",
+  "description": "Dynamic interactive quiz platform with 30-second timers, live leaderboards, AI quiz generator, personalized stats tracking, social sharing, custom theme builder, and sound effects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
